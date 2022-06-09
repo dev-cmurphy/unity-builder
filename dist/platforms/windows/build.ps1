@@ -105,7 +105,7 @@ Get-ChildItem $Env:UNITY_PROJECT_PATH
 
 Write-Output ""
 Write-Output "###########################"
-Write-Output "#    Building project     #"
+Write-Output "# Building project (ANDR) #"
 Write-Output "###########################"
 Write-Output ""
 
@@ -116,7 +116,7 @@ Write-Output ""
                                                                           -customBuildTarget $Env:BUILD_TARGET `
                                                                           -customBuildPath $Env:CUSTOM_BUILD_PATH `
                                                                           -buildVersion $Env:VERSION `
-                                                                          -androidVersionCode 0 `
+                                                                          -androidVersionCode $Env:ANDROID_VERSION_CODE `
                                                                           $Env:CUSTOM_PARAMETERS `
                                                                           -logfile | Out-Host
 
