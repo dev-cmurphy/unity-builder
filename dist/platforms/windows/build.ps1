@@ -116,6 +116,7 @@ Write-Output ""
                                                                           -customBuildTarget $Env:BUILD_TARGET `
                                                                           -customBuildPath $Env:CUSTOM_BUILD_PATH `
                                                                           -buildVersion $Env:VERSION `
+                                                                          -androidVersionCode 0 `
                                                                           $Env:CUSTOM_PARAMETERS `
                                                                           -logfile | Out-Host
 
